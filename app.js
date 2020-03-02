@@ -55,10 +55,11 @@ function getTasks() {
 function addTask(e) {
   e.preventDefault();
 
+  // ALTERNATIVE ----  if (taskInput.value.replace(/\s/g, "").length > 0)....
+
   if (taskInput.value.trim() === "") {
     alert("Add a task!");
   } else {
-    // Create a task
     // Create a new list item
     const li = document.createElement("li");
     // Add class to li
